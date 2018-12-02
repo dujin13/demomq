@@ -6,7 +6,11 @@
 	<groupId>com.demo.mq</groupId>
 	<artifactId>demo-mq</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+    <modules>
+        <module>activemq</module>
+		<module>rocketmq</module>
+	</modules>
+    <packaging>pom</packaging>
 
 	<name>demo-mq</name>
 	<description>Demo project for Spring Boot</description>
@@ -25,18 +29,10 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-activemq</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-amqp</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.rocketmq</groupId>
-			<artifactId>rocketmq-client</artifactId>
-            <version>4.3.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
